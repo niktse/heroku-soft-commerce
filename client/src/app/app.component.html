@@ -1,0 +1,107 @@
+<div class="container">
+  <div class="topnav row row-cols-3 ">
+    
+    <a class="col ">Customer Service</a>
+    <a class="col text-center">Free and easy shipping</a>
+    <a class="col text-right">Find a store</a>
+  
+  
+  </div>
+  <div class=" middle-nav row row-cols-3 my-4 ">
+    <div class="  col  text-left ">
+      <div class=" has-search ">
+        <span class="fa fa-search form-control-feedback"></span>
+        <input type="text" class="search rounded-0 " placeholder="Search products...">
+      </div>
+  </div>
+  
+    <div class="logo col text-center" routerLink="/homepage">LOGO</div>
+  
+  
+    
+  
+    <div class="icons col form-inline   " >
+      <div class="pl-3"><mat-icon>search</mat-icon></div>
+      <div class="pl-3"><mat-icon >favorite_border</mat-icon></div>
+      <div class=" pl-3"><mat-icon>shopping_cart</mat-icon></div>
+      <div class=" pl-3"><mat-icon>person</mat-icon></div>
+      <div class=" pl-3">
+      <select class="form-control language-button " name="" id="">
+        <option selected >En</option>
+        <option> Gr</option>
+   </select>
+    </div>
+    
+  </div>
+  </div>
+  
+  <div class="navbar row row-cols-1 text-right">
+    <a >New in</a>
+    <a class="link text-reset text-decoration-none" routerLink="/products" >Clothing</a>
+    <a >Accessories</a>
+    <a >Textile Masks</a>
+    <a >Total Look</a>
+    <a >Collection</a>
+    <a >Inspiration</a>
+    <a >Blog</a>
+    <a >Sale</a>
+    <a >Live Shopping</a>
+  </div>
+  
+  
+  
+                <router-outlet></router-outlet>  
+  
+  
+  <div class="container">
+  <div class="footer row row-cols-5 mx-5 mt-5 ">
+    <div class="footer-col col pr-5">
+      <p class=" footer-text ">OUR STORES</p>
+      <select class="form-control Country  " name="country" id="country">
+        <option value="" disabled selected>-Select Country-</option>
+        <option *ngFor="let country of countries" [value]="country.name">{{country.name}}</option>
+   </select>    
+   <br>
+   <select class="form-control Country pt " name="country" id="country">
+    <option value="" disabled selected>-Select City-</option>
+  </select>  
+    </div>
+  
+    <div class="footer-col col pr-5">
+      <p class=" footer-text ">ORDERS</p>
+      <p>My Account<br>
+        Payment & Delivery<br>
+        Shopping Basket<br>
+        Returns & Exchanges</p>
+    </div>
+    <div class="footer-col col pr-5">
+      <p class=" footer-text ">CORPORATE</p>
+      <p>Contact Us<br>
+        Corpotate Social<br>
+        Responsibility<br>
+        Careers</p>
+    </div>
+    <div class="footer-col col pr-5">
+      <p class=" footer-text ">LEGAL</p>
+      <p>GDPR<br>
+        Campaings<br>
+        General Terms<br>
+        and Conditions</p>
+    </div>
+    <div class="footer-col col ">
+      <p class=" footer-text ">GLOBAL</p>
+      <p>Corpotate Social<br>Responsibility</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <div class="copyright text-light text-center  ">
+    <p class="copyright-text pt-4">COPYRIGHT © 2021 </p>
+  </div>

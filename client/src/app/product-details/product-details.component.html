@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row row-cols-2 my-5">
+        <div class="col">
+            <img class="prod-img "  src="{{apiServerUrl}}{{product?.image}}">
+        </div>
+        <div class="col">
+            <img class="prod-img " src="{{apiServerUrl}}{{product?.image}}">
+        </div>
+        <div class="col-3">
+<div class="title">{{product?.title}}</div>
+<div class="price">{{product?.price}}€ </div>
+
+<div class="size-header">Size</div>
+<div class="size">{{product?.size}}</div>
+<button class="addToCart" (click)="DeleteProduct(product?._id)"  routerLink="/products">Add to Cart</button>
+<div class="delivery-time"> <mat-icon>arrow_forward</mat-icon>DELIVERY FROM 4-8 DAYS</div>
+<div class="free-delivery"><mat-icon> directions_car</mat-icon> Free Delivery</div>
+<div class="contact-us"><mat-icon> phonelink_ring</mat-icon> 1111 123123 | Mond.-Saturday 9:30am-5:00am</div>
+        </div>
+    </div>
+
+    <mat-tab-group class="tabs " animationDuration="0ms">
+        <mat-tab label="ΠΕΡΙΣΣΟΤΕΡΕΣ ΠΛΗΡΟΦΟΡΙΕΣ" >
+            
+            <tr>
+            <th class="h5 font-weight-bold p-3 ">Χρώμα:</th>
+            <td class="pl-3 h5">{{product?.color}}</td>
+            
+        </tr>
+        <tr>
+        <th class="h5 font-weight-bold p-3">Κατηγορία:</th>
+        <td class="pl-3 h5">{{product?.category}}</td>
+        </tr>
+        <tr>
+            <th class="h5 font-weight-bold p-3">Περιγραφή:</th>
+            <td class="pl-3 h5 ">{{product?.description}}</td>
+            </tr>
+        
+        </mat-tab>
+        
+        
+        
+        <mat-tab label="ΤΡΟΠΟΙ ΠΛΗΡΩΜΗΣ"><div class="h5 p-3 col">
+            Η παραγγελία σας μπορεί να πληρωθεί με τους εξής τρόπους:
+            <ul>
+            <li>Αντικαταβολή, πληρωμή στον υπάλληλο της εταιρίας courier κατά την παράδοση των προϊόντων (έξτρα χρέωση €3.50).</li>
+            <li>Πληρωμή μέσω χρεωστικής & πιστωτικής κάρτας.</li>
+            <li>Πληρωμή μέσω PayPal. Μπορείτε να κάνετε τη πληρωμή σας μέσω της ασφαλής πλατφόρμας της PayPal με μηδενική χρέωση.</li>
+            <li>Κατάθεση σε τραπεζικό λογαριασμό της εταιρείας μας.</li>
+          </ul> </div>
+        </mat-tab>
+        
+        
+        <mat-tab label="ΠΟΛΙΤΙΚΗ ΑΛΛΑΓΩΝ ΚΑΙ ΕΠΙΣΤΡΟΦΩΝ"><div class="h5 p-3 col">
+            Για όλες τις επιστροφές προϊόντων είναι απαραίτητο, τα προϊόντα να είναι στην αρχική τους κατάσταση, αχρησιμοποίητα και να επιστραφούν σε διάστημα εντός 15 ημερών από την ημερομηνία παραλαβής της παραγγελίας. Εάν θέλετε να αντικαταστήσετε το προϊόν με το ίδιο προϊόν σε άλλο νούμερο ή με κάποιο άλλο σχέδιο, θα πρέπει να επικοινωνήσετε μαζί μας για να επιβεβαιώσουμε ότι υπάρχει διαθέσιμο.
+            <br><br>
+            Στην περίπτωση της αλλαγής-επιστροφής των προϊόντων από την Κύπρο και τον υπόλοιπο κόσμο, το κόστος μεταφορικών επιβαρύνει τον πελάτη,και είναι απαραίτητη πρωτά η επικοινωνία με κάποιον εκπρόσωπο μας. Για λόγους υγιεινής δεν γίνονται αλλαγές ούτε επιστροφές σε όλα τα αξεσουάρ.
+            <br><br>
+            Η πρώτη αλλαγή πραγματοποιείται δωρέαν!</div></mat-tab>
+      </mat-tab-group>
+</div>

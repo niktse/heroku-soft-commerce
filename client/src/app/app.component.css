@@ -1,0 +1,62 @@
+.container {
+  min-width: 100%;
+  overflow-x: hidden;
+}
+.footer {
+  height: 200px;
+  padding-left: 170px;
+}
+.Country {
+  border-color: black;
+  border-radius: 2px;
+  border-width: 1px;
+  width: 90%;
+}
+.footer-text {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.copyright {
+  min-width: 90%;
+  margin-left: -7%;
+  margin-right: -6.5%;
+  height: 70px;
+  background-color: black;
+}
+
+.topnav {
+  padding-left: 60px;
+  padding-right: 65px;
+  background-color: black;
+  color: white;
+}
+.middle-nav {
+  margin-left: 2.4%;
+  margin-right: 2.4%;
+}
+
+.navbar {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.icons {
+  position: relative;
+  left: 318px;
+}
+.language-button {
+  border-radius: 2px;
+  width: 100%;
+}
+.search {
+  border-radius: 2px;
+  border-width: 0.5px;
+  border-color: grey;
+  width: 85%;
+  height: 50px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+}

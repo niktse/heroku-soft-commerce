@@ -1,0 +1,34 @@
+
+
+<div class="container-fluid mt-5">
+    <div class="CONT row row-cols-2">
+    <div class=" filter col-2">
+        
+    <div class="form-group mt-5"  >
+        <input type="text" class="form-control" placeholder=" Search by name" style="width:300px" [(ngModel)]="searchTerm"/>
+    </div>
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    <div class="Product-list col ">
+        <div class="row row-cols-3    ">
+        <div class=" content-box d-inline col-3 mt-5" *ngFor="let product of products | productFilter:searchTerm  ">
+            <div class="">
+                <a routerLink="/products/{{product?._id}}">
+            <img class="prod-img" src="{{apiServerUrl}}{{product?.image}}">
+        </a>
+        
+                <div class="textUphoto  text-center ">{{product?.title}} </div>
+                <div class="textUphotos  text-center  ">{{product?.price}}€</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
